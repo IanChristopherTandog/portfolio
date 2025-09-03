@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 <body>
         <!-- Navigation -->
@@ -18,11 +19,11 @@
         <nav>
             <div class="container">
                 <div class="nav-content">
-                    <div class="logo">IC</div>
+                    <a href="#home" class="logo">IC</a>
                     <ul class="nav-links">
                         <li><a href="#home" class="nav-link active">Home</a></li>
                         <li><a href="#about" class="nav-link">About</a></li>
-                        <li><a href="#projects" class="nav-link">Work</a></li>
+                        <li><a href="#projects" class="nav-link">Projects</a></li>
                         <li><a href="#experience" class="nav-link">Experience</a></li>
                         <li><a href="#contact" class="nav-link">Contact</a></li>
                         <li><button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView()">Let's Talk</button></li>
@@ -62,14 +63,12 @@
                 </div>
                 
                 <h1>
-                    Building <span class="hero-highlight">scalable systems</span><br>
-                    that drive business growth
+                    Ian Christopher Tandog
                 </h1>
+                <h2><span class="hero-highlight">Entry-Level Software Developer | Web & Game Development</span></h2>
                 
                 <p class="hero-subtitle">
-                    Software Developer with 8+ years of experience crafting high-performance 
-                    applications for startups to Fortune 500 companies. Specialized in React, Node.js, 
-                    and cloud architecture.
+                    BSIT graduate and aspiring software developer with hands-on experience in <strong>full-stack web development</strong> and <strong>game development</strong>. Passionate about building scalable and user-friendly
                 </p>
 
                 <div class="hero-actions">
@@ -83,7 +82,7 @@
                     </a>
                 </div>
 
-                <div class="hero-stats">
+                <!-- <div class="hero-stats">
                     <div class="stat">
                         <div class="stat-number">50+</div>
                         <div class="stat-label">Projects Delivered</div>
@@ -100,7 +99,7 @@
                         <div class="stat-number">$2M+</div>
                         <div class="stat-label">Revenue Generated</div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -120,146 +119,163 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        Over the past 8 years, I've had the privilege of working with incredible teams 
-                        to build software that matters. From scaling a fintech startup from 0 to 1M 
-                        users to architecting microservices for enterprise clients, I've learned that 
-                        great software is as much about understanding people as it is about code.
+                        I recently graduated with a Bachelor of Science in Information Technology (BSIT) at STI College Dasmariñas, where I developed a <strong>full-stack salon appointment system</strong> as my thesis project. This system featured an AI-powered customer inquiry assistant using Chatbase API, and an admin panel built with PHP, MySQL, HTML, CSS, JavaScript, and Bootstrap
                     </p>
                     <p>
-                        I specialize in full-stack development with a focus on performance, scalability, 
-                        and user experience. My approach combines modern development practices with 
-                        battle-tested architectural patterns to deliver reliable, maintainable solutions.
+                        I also gained hands-on experience as a <strong>Game Developer Intern</strong> at GoCrayons Digital Inc., where I designed and developed 2D games using <strong>Godot Engine and GDScript</strong>, implemented core mechanics, and collaborated with a team in an agile environment.
                     </p>
                     <p>
-                        When I'm not coding, you'll find me mentoring junior developers, contributing 
-                        to open source projects, or speaking at tech conferences about best practices 
-                        in modern web development.
+                        My technical toolkit includes <strong>Java, Python, C#, PHP, React, Tailwind CSS, Bootstrap, MySQL, and SQL Server</strong>. I am passionate about <strong>full-stack development, game development, and creating user-friendly systems</strong>. I’m eager to keep learning and contribute to projects that challenge me to grow as a developer.
                     </p>
                 </div>
 
                 <div class="skills-section">
                     <div class="skills-category">
-                        <h4>Frontend Expertise</h4>
-                        <div class="skills-list">
-                            <div class="skill-item-enhanced">
-                                <div class="skill-icon" style="background: linear-gradient(135deg, #61DAFB, #21325B);">⚛️</div>
-                                <div>
-                                    <div class="skill-name">React</div>
-                                    <div class="skill-level">Expert</div>
-                                </div>
-                            </div>
-                            <div class="skill-item-enhanced">
-                                <div class="skill-icon" style="background: linear-gradient(135deg, #3178C6, #235A97);">📘</div>
-                                <div>
-                                    <div class="skill-name">TypeScript</div>
-                                    <div class="skill-level">Expert</div>
-                                </div>
-                            </div>
-                            <div class="skill-item-enhanced">
-                                <div class="skill-icon" style="background: linear-gradient(135deg, #000000, #333333);">▲</div>
-                                <div>
-                                    <div class="skill-name">Next.js</div>
-                                    <div class="skill-level">Expert</div>
-                                </div>
-                            </div>
-                            <div class="skill-item-enhanced">
-                                <div class="skill-icon" style="background: linear-gradient(135deg, #4FC08D, #35495E);">💚</div>
-                                <div>
-                                    <div class="skill-name">Vue.js</div>
-                                    <div class="skill-level">Advanced</div>
-                                </div>
-                            </div>
-                            <div class="skill-item-enhanced">
-                                <div class="skill-icon" style="background: linear-gradient(135deg, #06B6D4, #0F172A);">🎨</div>
-                                <div>
-                                    <div class="skill-name">Tailwind CSS</div>
-                                    <div class="skill-level">Expert</div>
-                                </div>
-                            </div>
+                    <h4>Programming Languages</h4>
+                    <div class="skills-list">
+                    <div class="skill-item-enhanced">
+                        <i class="devicon-java-plain colored skill-icon"></i>
+                        <div>
+                        <div class="skill-name">Java</div>
+                        <div class="skill-level">Intermediate</div>
                         </div>
                     </div>
+                    <div class="skill-item-enhanced">
+                        <i class="devicon-python-plain colored skill-icon"></i>
+                        <div>
+                        <div class="skill-name">Python</div>
+                        <div class="skill-level">Beginner</div>
+                        </div>
+                    </div>
+                    <div class="skill-item-enhanced">
+                        <i class="devicon-cplusplus-plain colored skill-icon"></i>
+                        <div>
+                        <div class="skill-name">C#</div>
+                        <div class="skill-level">Intermediate</div>
+                        </div>
+                    </div>
+                    <div class="skill-item-enhanced">
+                        <i class="devicon-php-plain colored skill-icon"></i>
+                        <div>
+                        <div class="skill-name">PHP</div>
+                        <div class="skill-level">Proficient</div>
+                        </div>
+                    </div>
+                    <div class="skill-item-enhanced">
+                        <i class="devicon-html5-plain colored skill-icon"></i>
+                        <div>
+                        <div class="skill-name">HTML</div>
+                        <div class="skill-level">Proficient</div>
+                        </div>
+                    </div>
+                    <div class="skill-item-enhanced">
+                        <i class="devicon-css3-plain colored skill-icon"></i>
+                        <div>
+                        <div class="skill-name">CSS</div>
+                        <div class="skill-level">Proficient</div>
+                        </div>
+                    </div>
+                    <div class="skill-item-enhanced">
+                        <i class="devicon-javascript-plain colored skill-icon"></i>
+                        <div>
+                        <div class="skill-name">JavaScript</div>
+                        <div class="skill-level">Proficient</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
 
-                    <div class="skills-category">
-                        <h4>Backend & DevOps</h4>
-                        <div class="skills-list">
-                            <div class="skill-item-enhanced">
-                                <div class="skill-icon" style="background: linear-gradient(135deg, #68A063, #215732);">🟢</div>
-                                <div>
-                                    <div class="skill-name">Node.js</div>
-                                    <div class="skill-level">Expert</div>
-                                </div>
-                            </div>
-                            <div class="skill-item-enhanced">
-                                <div class="skill-icon" style="background: linear-gradient(135deg, #306998, #FFE052);">🐍</div>
-                                <div>
-                                    <div class="skill-name">Python</div>
-                                    <div class="skill-level">Expert</div>
-                                </div>
-                            </div>
-                            <div class="skill-item-enhanced">
-                                <div class="skill-icon" style="background: linear-gradient(135deg, #FF9900, #232F3E);">☁️</div>
-                                <div>
-                                    <div class="skill-name">AWS</div>
-                                    <div class="skill-level">Expert</div>
-                                </div>
-                            </div>
-                            <div class="skill-item-enhanced">
-                                <div class="skill-icon" style="background: linear-gradient(135deg, #2496ED, #0073EC);">🐳</div>
-                                <div>
-                                    <div class="skill-name">Docker</div>
-                                    <div class="skill-level">Advanced</div>
-                                </div>
-                            </div>
-                            <div class="skill-item-enhanced">
-                                <div class="skill-icon" style="background: linear-gradient(135deg, #326CE5, #0F1419);">⚓</div>
-                                <div>
-                                    <div class="skill-name">Kubernetes</div>
-                                    <div class="skill-level">Advanced</div>
-                                </div>
-                            </div>
+                <!-- Frameworks & Tools -->
+                <div class="skills-category">
+                    <h4>Frameworks & Tools</h4>
+                    <div class="skills-list">
+                    
+                    <div class="skill-item-enhanced">
+                        <i class="devicon-bootstrap-plain colored skill-icon"></i>
+                        <div>
+                        <div class="skill-name">Bootstrap</div>
+                        <div class="skill-level">Proficient</div>
                         </div>
                     </div>
+                    <div class="skill-item-enhanced">
+                        <i class="devicon-react-original colored skill-icon"></i>
+                        <div>
+                        <div class="skill-name">React</div>
+                        <div class="skill-level">Beginner</div>
+                        </div>
+                    </div>
+                    <div class="skill-item-enhanced">
+                        <i class="devicon-tailwindcss-original colored skill-icon"></i>
+                        <div>
+                        <div class="skill-name">Tailwindcss</div>
+                        <div class="skill-level">Beginner</div>
+                        </div>
+                    </div>
+                    <div class="skill-item-enhanced">
+                        <i class="devicon-spring-plain colored skill-icon"></i>
+                        <div>
+                        <div class="skill-name">Spring Framework</div>
+                        <div class="skill-level">Beginner</div>
+                        </div>
+                    </div>
+                    <div class="skill-item-enhanced">
+                        <i class="devicon-git-plain colored skill-icon"></i>
+                        <div>
+                        <div class="skill-name">Git</div>
+                        <div class="skill-level">Intermediate</div>
+                        </div>
+                    </div>
+                    <div class="skill-item-enhanced">
+                        <i class="devicon-git-plain colored skill-icon"></i>
+                        <div>
+                        <div class="skill-name">Git</div>
+                        <div class="skill-level">Intermediate</div>
+                        </div>
+                    </div>
+                    <div class="skill-item-enhanced">
+                        <i class="devicon-github-original colored skill-icon"></i>
+                        <div>
+                        <div class="skill-name">GitHub</div>
+                        <div class="skill-level">Proficient</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
 
-                    <div class="skills-category">
-                        <h4>Data & Testing</h4>
-                        <div class="skills-list">
-                            <div class="skill-item-enhanced">
-                                <div class="skill-icon" style="background: linear-gradient(135deg, #336791, #8CC8FF);">🐘</div>
-                                <div>
-                                    <div class="skill-name">PostgreSQL</div>
-                                    <div class="skill-level">Expert</div>
-                                </div>
-                            </div>
-                            <div class="skill-item-enhanced">
-                                <div class="skill-icon" style="background: linear-gradient(135deg, #4DB33D, #3FA037);">🍃</div>
-                                <div>
-                                    <div class="skill-name">MongoDB</div>
-                                    <div class="skill-level">Advanced</div>
-                                </div>
-                            </div>
-                            <div class="skill-item-enhanced">
-                                <div class="skill-icon" style="background: linear-gradient(135deg, #DC382D, #B32821);">📊</div>
-                                <div>
-                                    <div class="skill-name">Redis</div>
-                                    <div class="skill-level">Advanced</div>
-                                </div>
-                            </div>
-                            <div class="skill-item-enhanced">
-                                <div class="skill-icon" style="background: linear-gradient(135deg, #C21325, #99424F);">🃏</div>
-                                <div>
-                                    <div class="skill-name">Jest</div>
-                                    <div class="skill-level">Expert</div>
-                                </div>
-                            </div>
-                            <div class="skill-item-enhanced">
-                                <div class="skill-icon" style="background: linear-gradient(135deg, #17202C, #69D3A7);">🌲</div>
-                                <div>
-                                    <div class="skill-name">Cypress</div>
-                                    <div class="skill-level">Advanced</div>
-                                </div>
+                <!-- Databases -->
+                <div class="skills-category">
+                    <h4>Databases</h4>
+                    <div class="skills-list">
+                    <div class="skill-item-enhanced">
+                        <i class="devicon-mysql-plain colored skill-icon"></i>
+                        <div>
+                        <div class="skill-name">MySQL</div>
+                        <div class="skill-level">Proficient</div>
+                        </div>
+                    </div>
+                    <div class="skill-item-enhanced">
+                        <i class="devicon-sqlite-plain colored skill-icon"></i>
+                        <div>
+                        <div class="skill-name">SQLite</div>
+                        <div class="skill-level">Proficient</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Game Development -->
+                <div class="skills-category">
+                    <h4>Game Development</h4>
+                    <div class="skills-list">
+                        <div class="skill-item-enhanced">
+                            <i class="devicon-godot-plain colored skill-icon"></i>
+                            <div>
+                            <div class="skill-name">Godot Engine</div>
+                            <div class="skill-level">Intermediate</div>
                             </div>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -281,18 +297,16 @@
                 <article class="project-card">
                     <div class="project-header">
                         <div>
-                            <h3 class="project-title">FinTech Trading Platform</h3>
-                            <div class="project-type">Enterprise</div>
+                            <h3 class="project-title">Web-based Appointment System with Inquiry for Minell's Hair, Nail, and Lashes Salon</h3>
+                            <div class="project-type">Academic</div>
                         </div>
                     </div>
                     
                     <p class="project-description">
-                        Architected a content generation platform using OpenAI's GPT models, serving 
-                        10K+ users with personalized content recommendations. Implemented advanced caching, 
-                        rate limiting, and cost optimization strategies reducing API costs by 60%.
+                        A full-stack web application designed to modernize salon operations by streamlining appointment scheduling, client inquiries, and admin management. The system improves operational efficiency while enhancing the customer experience..
                     </p>
 
-                    <div class="project-metrics">
+                    <!-- <div class="project-metrics">
                         <div class="metric">
                             <span>Users:</span>
                             <span class="metric-value">10K+</span>
@@ -305,72 +319,105 @@
                             <span>Generation Time:</span>
                             <span class="metric-value">2.3s</span>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="project-tech">
-                        <span class="tech-tag">Next.js</span>
-                        <span class="tech-tag">OpenAI API</span>
-                        <span class="tech-tag">Prisma</span>
-                        <span class="tech-tag">Stripe</span>
-                        <span class="tech-tag">Vercel</span>
-                        <span class="tech-tag">Supabase</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Bootstrap</span>
+                        <span class="tech-tag">Chatbase API</span>
+                        <span class="tech-tag">XAMMP</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
                     </div>
 
                     <div class="project-links">
-                        <a href="#" class="project-link">
+                        <a href="https://github.com/IanChristopherTandog/Web-based-Appointment-System-with-Inquiry-for-Minell-s-Hair-Nail-and-Lashes-Salon" class="project-link">
                             GitHub →
                         </a>
-                        <a href="#" class="project-link">
+                        <a href="https://github.com/IanChristopherTandog/Web-based-Appointment-System-with-Inquiry-for-Minell-s-Hair-Nail-and-Lashes-Salon" class="project-link">
                             Live Demo →
                         </a>
                     </div>
                 </article>
-
                 <article class="project-card">
                     <div class="project-header">
                         <div>
-                            <h3 class="project-title">E-Commerce Analytics Dashboard</h3>
-                            <div class="project-type">SaaS</div>
+                            <h3 class="project-title">Marci Metzger Real Estate Landing Page</h3>
+                            <div class="project-type">Personal</div>
                         </div>
                     </div>
                     
                     <p class="project-description">
-                        Built a comprehensive analytics platform processing 1M+ events daily. Features 
-                        real-time dashboards, custom reporting, and machine learning-powered insights 
-                        that helped clients increase revenue by an average of 25%.
+                        A responsive real estate website home page, originally created for a Web Builder assignment at Luxury Presence. Revamped into a personal portfolio project to demonstrate modern web design with React and Tailwind CSS.
                     </p>
 
-                    <div class="project-metrics">
-                        <div class="metric">
-                            <span>Events/Day:</span>
-                            <span class="metric-value">1M+</span>
-                        </div>
-                        <div class="metric">
-                            <span>Revenue Increase:</span>
-                            <span class="metric-value">25%</span>
-                        </div>
-                        <div class="metric">
-                            <span>Data Processing:</span>
-                            <span class="metric-value">Real-time</span>
-                        </div>
-                    </div>
-
                     <div class="project-tech">
-                        <span class="tech-tag">Vue.js</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">FastAPI</span>
-                        <span class="tech-tag">Apache Kafka</span>
-                        <span class="tech-tag">ClickHouse</span>
-                        <span class="tech-tag">D3.js</span>
-                        <span class="tech-tag">GCP</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Tailwindcss</span>
                     </div>
 
                     <div class="project-links">
-                        <a href="#" class="project-link">
-                            Case Study →
+                        <a href="https://github.com/IanChristopherTandog/Marci-Metzger-Real-Estate" class="project-link">
+                            GitHub →
                         </a>
-                        <a href="#" class="project-link">
-                            Architecture →
+                        <a href="https://marci-metzger-real-estate.pages.dev/" class="project-link">
+                            Live Demo →
+                        </a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-header">
+                        <div>
+                            <h3 class="project-title">Warehouse Management System</h3>
+                            <div class="project-type">Academic</div>
+                        </div>
+                    </div>
+                    
+                    <p class="project-description">
+                        A C# Windows Forms Application (.NET Framework 4.7.2) for managing warehouse operations, built as part of an Event-Driven Programming course. The system provides an intuitive desktop interface for managing products, categories, customers, and orders with full database integration.
+                    </p>
+
+                    <div class="project-tech">
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">WinForms</span>
+                        <span class="tech-tag">SQL Server</span>
+                        <span class="tech-tag">ADO.NET</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/IanChristopherTandog/warehouse-management-system" class="project-link">
+                            GitHub →
+                        </a>
+                        <a href="https://github.com/IanChristopherTandog/warehouse-management-system" class="project-link">
+                            Live Demo →
+                        </a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-header">
+                        <div>
+                            <h3 class="project-title">Dodge the Creeps</h3>
+                            <div class="project-type">Personal</div>
+                        </div>
+                    </div>
+                    
+                    <p class="project-description">
+                        A simple game made in Godot Engine where you control a character to dodge incoming enemies for as long as possible.
+                    </p>
+
+                    <div class="project-tech">
+                        <span class="tech-tag">Godot 3</span>
+                        <span class="tech-tag">GDScript</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/IanChristopherTandog/DodgeTheCreeps" class="project-link">
+                            GitHub →
+                        </a>
+                        <a href="https://ianchristophertandog.github.io/DodgeTheCreeps/" class="project-link">
+                            Live Demo →
                         </a>
                     </div>
                 </article>
@@ -394,18 +441,19 @@
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">2022 - Present</div>
-                        <h3 class="timeline-title">Software Developer</h3>
-                        <div class="timeline-company">TechCorp Solutions</div>
+                        <div class="timeline-date">January 2025 - May 2025</div>
+                        <h3 class="timeline-title">Game Devloper Intern</h3>
+                        <div class="timeline-company">GoCrayons Digital Inc.</div>
                         <p class="timeline-description">
-                            Leading technical architecture for enterprise clients, managing a team of 6 developers, 
-                            and driving adoption of modern development practices. Reduced infrastructure costs by 40% 
-                            through cloud optimization strategies.
+                            Developed 2D games using Godot Engine and GDScript, implementing core mechanics, 
+                            UI elements, and game logic. Collaborated with a team in an agile environment, 
+                            participated in code reviews, and contributed to brainstorming sessions for new game ideas.
                         </p>
                     </div>
                 </div>
 
-                <div class="timeline-item">
+                
+                <!-- <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-date">2020 - 2022</div>
@@ -445,7 +493,7 @@
                             while contributing to 15+ client projects.
                         </p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -506,7 +554,7 @@
                         <div class="contact-value">ictandog37@gmail.com</div>
                     </a>
 
-                    <a href="https://linkedin.com/in/ianchristophertandog" class="contact-method">
+                    <a href="https://www.linkedin.com/in/ian-christopher-tandog-8a366b202/" class="contact-method">
                         <div class="contact-icon">💼</div>
                         <div class="contact-label">LinkedIn</div>
                         <div class="contact-value">@ianchristophertandog</div>
@@ -518,10 +566,10 @@
                         <div class="contact-value">@ianchristophertandog</div>
                     </a>
 
-                    <a href="tel:+1234567890" class="contact-method">
+                    <a href="tel:+639761312421" class="contact-method">
                         <div class="contact-icon">📞</div>
                         <div class="contact-label">Phone</div>
-                        <div class="contact-value">+1 (234) 567-890</div>
+                        <div class="contact-value">+63 976-1312-421</div>
                     </a>
                 </div>
 
@@ -540,9 +588,10 @@
     </section>
 
     <!-- Floating Action Button -->
-    <button class="fab" onclick="document.getElementById('contact').scrollIntoView()" aria-label="Contact">
+    <!-- <button class="fab" onclick="document.getElementById('contact').scrollIntoView()" aria-label="Contact">
         💬
-    </button>
+    </button> -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"></button>
 
     <!-- Footer -->
     <footer>
@@ -556,14 +605,20 @@
                             <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                         </svg>
                     </a>
-                    <a href="https://linkedin.com/in/ianchristophertandog" class="social-link" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/ian-christopher-tandog-8a366b202/" class="social-link" aria-label="LinkedIn">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                         </svg>
                     </a>
-                    <a href="https://twitter.com/ianchristophertandog" class="social-link" aria-label="Twitter">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                    <a href="https://www.facebook.com/ictandog05" class="social-link" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 
+                            23.407.593 24 1.325 24h11.495v-9.294H9.691V11.01h3.129V8.414c0-3.1 
+                            1.893-4.788 4.659-4.788 1.325 0 2.463.099 
+                            2.795.143v3.24h-1.918c-1.505 0-1.797.715-1.797 
+                            1.764v2.309h3.587l-.467 3.696h-3.12V24h6.116C23.407 
+                            24 24 23.407 24 22.674V1.326C24 
+                            .593 23.407 0 22.675 0z"/>
                         </svg>
                     </a>
                 </div>
