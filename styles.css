@@ -1129,3 +1129,61 @@ footer {
     font-weight: bold;
 }
 
+/* Projects CTA Section */
+.projects-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 1px solid var(--border-color, #e5e7eb);
+}
+
+/* View More Button */
+.view-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 28px;
+    background: transparent;
+    border: 2px solid var(--accent-color, #6366f1);
+    color: var(--accent-color, #6366f1);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.view-more-btn:hover {
+    background: var(--accent-color, #6366f1);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
+}
+
+.view-more-btn:active {
+    transform: translateY(-1px);
+}
+
+.view-more-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.view-more-btn:hover svg {
+    transform: translate(2px, -2px);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .projects-cta {
+        margin-top: 32px;
+        padding-top: 24px;
+    }
+    
+    .view-more-btn {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+    }
+}
