@@ -991,6 +991,15 @@ footer {
         align-items: flex-start;
         gap: 12px;
     }
+        .projects-cta {
+        margin-top: 32px;
+        padding-top: 24px;
+    }
+    
+    .view-more-btn {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+    }
 
     .project-metrics {
         flex-wrap: wrap;
@@ -1173,17 +1182,4 @@ footer {
 
 .view-more-btn:hover svg {
     transform: translate(2px, -2px);
-}
-
-/* Mobile responsive */
-@media (max-width: 768px) {
-    .projects-cta {
-        margin-top: 32px;
-        padding-top: 24px;
-    }
-    
-    .view-more-btn {
-        padding: 12px 24px;
-        font-size: 0.95rem;
-    }
 }
