@@ -24,7 +24,7 @@
                         <li><a href="#home" class="nav-link active">Home</a></li>
                         <li><a href="#about" class="nav-link">About</a></li>
                         <li><a href="#projects" class="nav-link">Projects</a></li>
-                        <li><a href="#experience" class="nav-link">Experience</a></li>
+                        <li><a href="#experience" class="nav-link">Timeline</a></li>
                         <li><a href="#contact" class="nav-link">Contact</a></li>
                         <li><button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView()">Let's Talk</button></li>
                     </ul>
@@ -44,7 +44,7 @@
             <a href="#home" class="nav-link">Home</a>
             <a href="#about" class="nav-link">About</a>
             <a href="#projects" class="nav-link">Work</a>
-            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#experience" class="nav-link">Timeline</a>
             <a href="#contact" class="nav-link">Contact</a>
             <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView()">Let's Talk</button>
         </div>
@@ -103,6 +103,59 @@
             </div>
         </div>
     </section>
+<!-- Tech Stack Carousel -->
+    <section class="tech-carousel">
+        <!-- First Row: Frontend & Languages (Scrolling Left) -->
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <div class="card"><i class="devicon-javascript-plain colored"></i> JavaScript</div>
+                <div class="card"><i class="devicon-python-plain colored"></i>Python</div>
+                <div class="card"><i class="devicon-java-plain colored"></i> Java</div>
+                <div class="card"><i class="devicon-cplusplus-plain colored"></i>C#</div>
+                <div class="card"><i class="devicon-html5-plain colored"></i>HTML</div>
+                <div class="card"><i class="devicon-css3-plain colored"></i>CSS</div>
+                <div class="card"><i class="devicon-react-original colored"></i> React</div>
+                <div class="card"><i class="devicon-tailwindcss-plain colored"></i>TailwindCSS</div>
+                <div class="card"><i class="devicon-bootstrap-plain colored"></i>Bootstrap</div>
+
+                <!-- Duplicates for seamless looping -->
+                <div class="card"><i class="devicon-javascript-plain colored"></i> JavaScript</div>
+                <div class="card"><i class="devicon-python-plain colored"></i>Python</div>
+                <div class="card"><i class="devicon-java-plain colored"></i> Java</div>
+                <div class="card"><i class="devicon-cplusplus-plain colored"></i>C#</div>
+                <div class="card"><i class="devicon-html5-plain colored"></i>HTML</div>
+                <div class="card"><i class="devicon-css3-plain colored"></i>CSS</div>
+                <div class="card"><i class="devicon-react-original colored"></i> React</div>
+                <div class="card"><i class="devicon-tailwindcss-plain colored"></i>TailwindCSS</div>
+                <div class="card"><i class="devicon-bootstrap-plain colored"></i>Bootstrap</div>
+            </div>
+        </div>
+
+        <!-- Second Row: Backend & Databases (Scrolling Right) -->
+        <div class="carousel-container">
+            <div class="carousel-track reverse">
+                <div class="card"><i class="devicon-php-plain colored"></i> PHP</div>
+                <div class="card"><i class="devicon-spring-plain colored"></i> Spring</div>
+                <div class="card"><i class="devicon-mysql-plain colored"></i>MySQL</div>
+                <div class="card"><i class="devicon-microsoftsqlserver-plain colored"></i>SQL Server</div>
+                <div class="card"><i class="devicon-postgresql-plain colored"></i>PostgreSQL</div>
+                <div class="card"><i class="devicon-firebase-plain colored"></i>Firebase</div>
+                <div class="card"><i class="devicon-godot-plain colored"></i> Godot</div>
+                <div class="card"><i class="devicon-renpy-plain colored"></i>RenPy</div>
+
+                <!-- Duplicates for seamless looping -->
+                <div class="card"><i class="devicon-php-plain colored"></i> PHP</div>
+                <div class="card"><i class="devicon-spring-plain colored"></i> Spring</div>
+                <div class="card"><i class="devicon-mysql-plain colored"></i>MySQL</div>
+                <div class="card"><i class="devicon-microsoftsqlserver-plain colored"></i>SQL Server</div>
+                <div class="card"><i class="devicon-postgresql-plain colored"></i>PostgreSQL</div>
+                <div class="card"><i class="devicon-firebase-plain colored"></i>Firebase</div>
+                <div class="card"><i class="devicon-godot-plain colored"></i> Godot</div>
+                <div class="card"><i class="devicon-renpy-plain colored"></i>RenPy</div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- About Section -->
     <section class="about section" id="about">
@@ -116,160 +169,39 @@
                 </p>
             </div>
 
-            <div class="about-content">
+            <div class="about-content-stats">
                 <div class="about-text">
                     <p>
-                        I recently graduated with a Bachelor of Science in Information Technology (BSIT) at STI College Dasmariñas, where I developed a <strong>full-stack salon appointment system</strong> as my thesis project. This system featured an AI-powered customer inquiry assistant using Chatbase API, and an admin panel built with PHP, MySQL, HTML, CSS, JavaScript, and Bootstrap
+                        As a fresh <strong>BSIT graduate from STI College Dasmariñas</strong>, I've discovered that the best code doesn't just work—it solves real problems. My thesis project, a <strong>full-stack salon appointment system</strong> with an AI-powered customer assistant (Chatbase API), taught me that building software is about understanding people as much as it is about understanding technology.
                     </p>
                     <p>
-                        I also gained hands-on experience as a <strong>Game Developer Intern</strong> at GoCrayons Digital Inc., where I designed and developed 2D games using <strong>Godot Engine and GDScript</strong>, implemented core mechanics, and collaborated with a team in an agile environment.
+                        During my internship as a <strong>Game Developer at GoCrayons Digital Inc.</strong>, I got to bring ideas to life using <strong>Godot Engine and GDScript</strong>. Designing game mechanics and working in an agile team showed me how collaboration and iteration lead to better solutions—lessons I carry into every project.
                     </p>
                     <p>
-                        My technical toolkit includes <strong>Java, Python, C#, PHP, React, Tailwind CSS, Bootstrap, MySQL, and SQL Server</strong>. I am passionate about <strong>full-stack development, game development, and creating user-friendly systems</strong>. I’m eager to keep learning and contribute to projects that challenge me to grow as a developer.
+                        I'm drawn to projects that challenge me to think differently, whether that's architecting a database, crafting an intuitive UI, or debugging tricky logic. My toolkit includes <strong>Java, Python, C#, PHP, React, and MySQL</strong>, but I'm always eager to learn whatever the project demands.
+                    </p>
+                    <p>
+                        Currently, I'm sharpening my skills in <strong>Java backend development and React frontend development</strong> through an <strong>Accenture training bootcamp</strong>—diving deep into enterprise-level architecture and modern web development practices. I'm looking for opportunities where I can apply this growing expertise and continue building solutions that make a real impact.
                     </p>
                 </div>
 
-                <div class="skills-section">
-                    <div class="skills-category">
-                    <h4>Programming Languages</h4>
-                    <div class="skills-list">
-                    <div class="skill-item-enhanced">
-                        <i class="devicon-java-plain colored skill-icon"></i>
-                        <div>
-                        <div class="skill-name">Java</div>
-                        <div class="skill-level">Intermediate</div>
-                        </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>2024</h3>
+                        <p>BSIT Graduate</p>
                     </div>
-                    <div class="skill-item-enhanced">
-                        <i class="devicon-python-plain colored skill-icon"></i>
-                        <div>
-                        <div class="skill-name">Python</div>
-                        <div class="skill-level">Beginner</div>
-                        </div>
+                    <div class="stat-card">
+                        <h3>10+</h3>
+                        <p>Technologies</p>
                     </div>
-                    <div class="skill-item-enhanced">
-                        <i class="devicon-cplusplus-plain colored skill-icon"></i>
-                        <div>
-                        <div class="skill-name">C#</div>
-                        <div class="skill-level">Intermediate</div>
-                        </div>
+                    <div class="stat-card">
+                        <h3>Active</h3>
+                        <p>Accenture Trainee</p>
                     </div>
-                    <div class="skill-item-enhanced">
-                        <i class="devicon-php-plain colored skill-icon"></i>
-                        <div>
-                        <div class="skill-name">PHP</div>
-                        <div class="skill-level">Proficient</div>
-                        </div>
+                    <div class="stat-card">
+                        <h3>Full-Stack</h3>
+                        <p>Developer</p>
                     </div>
-                    <div class="skill-item-enhanced">
-                        <i class="devicon-javascript-plain colored skill-icon"></i>
-                        <div>
-                        <div class="skill-name">JavaScript</div>
-                        <div class="skill-level">Proficient</div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-                <!-- Frameworks & Tools -->
-                <div class="skills-category">
-                    <h4>Web Development and Frameworks</h4>
-                    <div class="skills-list">
-
-                        <div class="skill-item-enhanced">
-                            <i class="devicon-html5-plain colored skill-icon"></i>
-                            <div>
-                            <div class="skill-name">HTML</div>
-                            <div class="skill-level">Proficient</div>
-                            </div>
-                        </div>
-                        <div class="skill-item-enhanced">
-                            <i class="devicon-css3-plain colored skill-icon"></i>
-                            <div>
-                            <div class="skill-name">CSS</div>
-                            <div class="skill-level">Proficient</div>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-item-enhanced">
-                            <i class="devicon-bootstrap-plain colored skill-icon"></i>
-                            <div>
-                            <div class="skill-name">Bootstrap</div>
-                            <div class="skill-level">Proficient</div>
-                            </div>
-                        </div>
-                        <div class="skill-item-enhanced">
-                            <i class="devicon-react-original colored skill-icon"></i>
-                            <div>
-                            <div class="skill-name">React</div>
-                            <div class="skill-level">Beginner</div>
-                            </div>
-                        </div>
-                        <div class="skill-item-enhanced">
-                            <i class="devicon-tailwindcss-original colored skill-icon"></i>
-                            <div>
-                            <div class="skill-name">Tailwindcss</div>
-                            <div class="skill-level">Beginner</div>
-                            </div>
-                        </div>
-                        <div class="skill-item-enhanced">
-                            <i class="devicon-spring-plain colored skill-icon"></i>
-                            <div>
-                            <div class="skill-name">Spring Framework</div>
-                            <div class="skill-level">Beginner</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Databases -->
-                <div class="skills-category">
-                    <h4>Databases</h4>
-                    <div class="skills-list">
-                        <div class="skill-item-enhanced">
-                            <i class="devicon-mysql-plain colored skill-icon"></i>
-                            <div>
-                            <div class="skill-name">MySQL</div>
-                            <div class="skill-level">Proficient</div>
-                            </div>
-                        </div>
-                        <div class="skill-item-enhanced">
-                            <i class="devicon-sqlite-plain colored skill-icon"></i>
-                            <div>
-                            <div class="skill-name">SQL Server</div>
-                            <div class="skill-level">Proficient</div>
-                            </div>
-                        </div>
-                        <div class="skill-item-enhanced">
-                            <i class="devicon-firebase-plain colored skill-icon"></i>
-                            <div>
-                            <div class="skill-name">Firebase/Firestore</div>
-                            <div class="skill-level">Intermediate</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Game Development -->
-                <div class="skills-category">
-                    <h4>Game Development</h4>
-                    <div class="skills-list">
-                        <div class="skill-item-enhanced">
-                            <i class="devicon-godot-plain colored skill-icon"></i>
-                            <div>
-                            <div class="skill-name">Godot Engine</div>
-                            <div class="skill-level">Intermediate</div>
-                            </div>
-                        </div>
-                        <div class="skill-item-enhanced">
-                            <i class="devicon-renpy-plain colored skill-icon"></i>
-                            <div>
-                            <div class="skill-name">Renpy</div>
-                            <div class="skill-level">Intermediate</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 </div>
             </div>
         </div>
@@ -426,19 +358,38 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
+    <!-- Experience/Timeline Section -->
     <section class="experience section" id="experience">
         <div class="container">
             <div class="section-header">
-                <div class="section-badge">Experience</div>
+                <div class="section-badge">Timeline</div>
                 <h2 class="section-title">Career Journey</h2>
                 <p class="section-description">
-                    From startup environments to enterprise solutions, each role has shaped my 
-                    approach to building software that scales.
+                    My journey from student to developer, building skills through education and hands-on projects, and continous learning.
                 </p>
             </div>
 
             <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">September 2025 - Present</div>
+                        <h3 class="timeline-title">Training Bootcamp</h3>
+                        <div class="timeline-company">Accenture</div>
+                        <p class="timeline-description">
+                            Intensive training program focused on Java backend development and React frontend development. Learning enterprise-level architecture patterns, RESTful API design, Spring Framework, and modern React practices for building scalable, production-ready applications.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">September 2021 - July 2025</div>
+                        <div class="timeline-title">Bachelors of Science in Information Technology</div>
+                        <div class="timeline-company">STI College Dasmariñas</div>
+                        <p class="timeline-description">Completed comprehensive IT curriculum with focus on full-stack development. Developed strong foundation in programming, databases, and software engineering principles through academic projects and collaborative team assignments.</p>
+                    </div>
+                </div>
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
@@ -450,6 +401,15 @@
                             UI elements, and game logic. Collaborated with a team in an agile environment, 
                             participated in code reviews, and contributed to brainstorming sessions for new game ideas.
                         </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024</div>
+                        <div class="timeline-title">Thesis Project - Salon Appointment System</div>
+                        <div class="timeline-company">Capstone Project</div>
+                        <p class="timeline-description">Designed and developed a full-stack salon appointment system featuring an AI-powered customer inquiry assistant using Chatbase API. Built the admin panel with PHP, MySQL, and Bootstrap, handling appointment scheduling, client management, and real-time notifications.</p>
                     </div>
                 </div>
             </div>
