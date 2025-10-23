@@ -239,9 +239,99 @@ window.addEventListener('scroll', () => {
     }
 });
 
-backToTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+const backToTop = document.getElementById('backToTop');
+if (backToTop) {
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
+// Projects data array
+const projects = [
+    {
+        title: "Salon Management System",
+        type: "Academic",
+        description: "Full-stack web application that modernizes salon operations with appointment scheduling, AI-powered customer inquiries, and comprehensive admin management.",
+        image: "/assets/images/salon.png",
+        imageAlt: "Salon Management System Dashboard",
+        tech: ["PHP", "MySQL", "Bootstrap", "Chatbase API"],
+        github: "https://github.com/IanChristopherTandog/Web-based-Appointment-System-with-Inquiry-for-Minell-s-Hair-Nail-and-Lashes-Salon",
+        demo: null
+    },
+    {
+        title: "Marci Metzger Real Estate",
+        type: "Personal",
+        description: "Responsive real estate landing page demonstrating modern web design with React and Tailwind CSS. Originally created for a Web Builder assignment, revamped as a portfolio showcase.",
+        image: "/assets/images/real-estate.png", // Add your image path
+        imageAlt: "Marci Metzger Real Estate Landing Page",
+        tech: ["React", "Tailwind CSS"],
+        github: "https://github.com/IanChristopherTandog/Marci-Metzger-Real-Estate",
+        demo: "https://marci-metzger-real-estate.pages.dev/"
+    },
+    {
+        title: "Warehouse Management System",
+        type: "Academic",
+        description: "Desktop application built with C# WinForms for managing warehouse operations. Features intuitive interface for products, inventory, customers, and orders with SQL Server integration.",
+        image: "/assets/images/warehouse.png", // Add your image path
+        imageAlt: "Warehouse Management System Interface",
+        tech: ["C#", "WinForms", "SQL Server", "ADO.NET"],
+        github: "https://github.com/IanChristopherTandog/warehouse-management-system",
+        demo: null
+    },
+    {
+        title: "Tank Battle",
+        type: "Personal",
+        description: "2D action game featuring player-controlled tanks with unlockable skills, power-ups, AI-driven enemies, and boss battles. Showcases smooth combat mechanics and resource management.",
+        image: "/assets/images/tank.png", // Add your image path
+        imageAlt: "Tank Battle Game Gameplay",
+        tech: ["Godot 3", "GDScript"],
+        github: "https://github.com/IanChristopherTandog/Tank-Battle",
+        demo: "https://ianchristophertandog.github.io/Tank-Battle/"
+    }
+];
+
+// Function to generate project cards
+function renderProjects() {
+    const container = document.getElementById('projects-container');
+    
+    projects.forEach(project => {
+        const card = document.createElement('article');
+        card.className = 'project-card';
+        
+        card.innerHTML = `
+            <div class="project-image">
+                <img src="${project.image}" alt="${project.imageAlt}">
+            </div>
+            <div class="project-content">
+                <div class="project-header">
+                    <h3 class="project-title">${project.title}</h3>
+                    <div class="project-type">${project.type}</div>
+                </div>
+                
+                <p class="project-description">
+                    ${project.description}
+                </p>
+
+                <div class="project-tech">
+                    ${project.tech.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+                </div>
+
+                <div class="project-links">
+                    <a href="${project.github}" class="project-link" target="_blank" rel="noopener noreferrer">
+                        GitHub →
+                    </a>
+                    ${project.demo ? `
+                        <a href="${project.demo}" class="project-link" target="_blank" rel="noopener noreferrer">
+                            Live Demo →
+                        </a>
+                    ` : ''}
+                </div>
+            </div>
+        `;
+        
+        container.appendChild(card);
     });
-});
+}
+
+// Run when DOM is loaded
+document.addEventListener('DOMContentLoaded', renderProjects);
