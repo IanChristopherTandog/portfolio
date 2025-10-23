@@ -51,61 +51,34 @@ function validateEmail(email) {
     return re.test(email);
 }
 
-contactForm.addEventListener('submit', async (e) => {
+contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    
-    const formData = new FormData(contactForm);
-    const data = Object.fromEntries(formData);
-    
-    // Basic validation
-    if (!data.name || !data.email || !data.subject || !data.message) {
-        showStatus('Please fill in all required fields.', 'error');
-        return;
-    }
-    
-    if (!validateEmail(data.email)) {
-        showStatus('Please enter a valid email address.', 'error');
-        return;
-    }
-    
-    // Disable submit button
+
     submitBtn.disabled = true;
     submitText.textContent = 'Sending...';
-    
-    try {
-        // Create mailto URL with form data
-        const subject = encodeURIComponent(data.subject);
-        const body = encodeURIComponent(
-            `Name: ${data.name}\n` +
-            `Email: ${data.email}\n` +
-            `Company: ${data.company || 'Not specified'}\n\n` +
-            `Message:\n${data.message}\n\n` +
-            `---\nSent from portfolio contact form`
-        );
-        
-        // For demo purposes, we'll show success and open email client
-        // In production, you'd send this to your backend/email service
-        const mailtoURL = `mailto:ictandog37@gmail.com?subject=${subject}&body=${body}`;
-        
-        // Simulate API call delay
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        
-        // Open email client
-        window.location.href = mailtoURL;
-        
-        // Show success message
-        showStatus('Message prepared! Your email client should open shortly.', 'success');
-        contactForm.reset();
-        
-    } catch (error) {
-        console.error('Error:', error);
-        showStatus('Something went wrong. Please try again or email directly.', 'error');
-    } finally {
-        // Re-enable submit button
-        submitBtn.disabled = false;
-        submitText.textContent = 'Send Message';
-    }
+
+    emailjs.sendForm('service_7xgnai9', 'template_b0v7rbk', contactForm)
+        .then(() => {
+            showStatus('✅ Message sent successfully!', 'success');
+            contactForm.reset();
+        })
+        .catch((error) => {
+            console.error('EmailJS error:', error);
+            showStatus('❌ Failed to send message. Please try again later.', 'error');
+        })
+        .finally(() => {
+            submitBtn.disabled = false;
+            submitText.textContent = 'Send Message';
+        });
 });
+
+
+//EmailJS Integration 
+(function(){
+    emailjs.init({
+    publicKey: "zniOUuwBCCLF-cIso",
+    });
+})();
 
 // Enhanced Navigation with scroll detection
 const nav = document.querySelector('nav');

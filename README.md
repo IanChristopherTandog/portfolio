@@ -19,6 +19,8 @@ A modern, responsive portfolio website showcasing my projects and skills as a we
 - Contact form integration
 - Clean, modern UI with dark theme
 - Optimized performance and accessibility
+- EmailJS integration
+- Calendy integration
 
 ## 🖼️ Screenshots
 ![Home Screen](assets/screenshots/home.png)
