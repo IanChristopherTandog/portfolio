@@ -166,6 +166,12 @@ nav.scrolled {
     position: relative;
     z-index: 2;
 }
+.hero-actions {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+    animation: slideUp 0.8s ease 0.6s both;
+}
 
 .hero-badge {
     display: inline-flex;

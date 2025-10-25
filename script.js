@@ -205,6 +205,8 @@ document.addEventListener('mousedown', () => {
 const backToTopBtn = document.getElementById('backToTop');
 
 window.addEventListener('scroll', () => {
+    if(!backToTopBtn) return;
+    
     if (window.pageYOffset > 300) {
         backToTopBtn.classList.add('show');
     } else {
@@ -235,7 +237,7 @@ const projects = [
         title: "Marci Metzger Real Estate",
         type: "Personal",
         description: "Responsive real estate landing page demonstrating modern web design with React and Tailwind CSS. Originally created for a Web Builder assignment, revamped as a portfolio showcase.",
-        image: "/assets/images/real-estate.png", // Add your image path
+        image: "/assets/images/real-estate.png",
         imageAlt: "Marci Metzger Real Estate Landing Page",
         tech: ["React", "Tailwind CSS"],
         github: "https://github.com/IanChristopherTandog/Marci-Metzger-Real-Estate",
@@ -245,7 +247,7 @@ const projects = [
         title: "Warehouse Management System",
         type: "Academic",
         description: "Desktop application built with C# WinForms for managing warehouse operations. Features intuitive interface for products, inventory, customers, and orders with SQL Server integration.",
-        image: "/assets/images/warehouse.png", // Add your image path
+        image: "/assets/images/warehouse.png", 
         imageAlt: "Warehouse Management System Interface",
         tech: ["C#", "WinForms", "SQL Server", "ADO.NET"],
         github: "https://github.com/IanChristopherTandog/warehouse-management-system",
@@ -255,7 +257,7 @@ const projects = [
         title: "Tank Battle",
         type: "Personal",
         description: "2D action game featuring player-controlled tanks with unlockable skills, power-ups, AI-driven enemies, and boss battles. Showcases smooth combat mechanics and resource management.",
-        image: "/assets/images/tank.png", // Add your image path
+        image: "/assets/images/tank.png", 
         imageAlt: "Tank Battle Game Gameplay",
         tech: ["Godot 3", "GDScript"],
         github: "https://github.com/IanChristopherTandog/Tank-Battle",
