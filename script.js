@@ -221,15 +221,32 @@ if (backToTop) {
   });
 }
 
-// Projects data array
+// Enhanced Projects data array with gallery and detailed information
 const projects = [
     {
         title: "Salon Management System",
         type: "Academic",
         description: "Full-stack web application that modernizes salon operations with appointment scheduling, AI-powered customer inquiries, and comprehensive admin management.",
+        detailedDescription: `
+            <p>A comprehensive web-based solution designed to streamline salon operations and enhance customer experience. This system integrates multiple aspects of salon management into a single, cohesive platform.</p>
+            <p>Built as a capstone project, the system demonstrates full-stack development capabilities, from database design to user interface implementation, with a focus on real-world business requirements.</p>
+        `,
         image: "/assets/images/salon.png",
         imageAlt: "Salon Management System Dashboard",
+        gallery: [
+            { src: "/assets/images/salon/dashboard.png", alt: "Dashboard Overview" },
+            { src: "/assets/images/salon/appointment.png", alt: "Appointment Scheduling Interface" },
+            { src: "/assets/images/salon/dashboard.png", alt: "Admin Management Panel" }
+        ],
         tech: ["PHP", "MySQL", "Bootstrap", "Chatbase API"],
+        features: [
+            "Real-time appointment scheduling with conflict detection and automated notifications",
+            "AI-powered chatbot integration for handling customer inquiries and FAQs 24/7",
+            "Comprehensive admin dashboard for managing services, staff, and customer records",
+            "Customer portal for viewing appointment history and managing bookings",
+            "Revenue tracking and analytics for business insights"
+        ],
+        challenges: "Integrating the Chatbase API while maintaining data privacy was a key challenge. Implemented proper data sanitization and created a custom middleware layer to handle API requests securely. Also optimized database queries for the scheduling system to handle concurrent bookings without conflicts.",
         github: "https://github.com/IanChristopherTandog/Web-based-Appointment-System-with-Inquiry-for-Minell-s-Hair-Nail-and-Lashes-Salon",
         demo: null
     },
@@ -237,9 +254,26 @@ const projects = [
         title: "Marci Metzger Real Estate",
         type: "Personal",
         description: "Responsive real estate landing page demonstrating modern web design with React and Tailwind CSS. Originally created for a Web Builder assignment, revamped as a portfolio showcase.",
+        detailedDescription: `
+            <p>A modern, visually striking landing page for a real estate professional that showcases property listings and services. This project emphasizes responsive design principles and contemporary UI/UX patterns.</p>
+            <p>Initially developed as an academic assignment, the project was completely redesigned and rebuilt using modern React patterns and Tailwind CSS to create a portfolio-worthy demonstration of front-end development skills.</p>
+        `,
         image: "/assets/images/real-estate.png",
         imageAlt: "Marci Metzger Real Estate Landing Page",
+        gallery: [
+            { src: "/assets/images/real-state/home.png", alt: "Hero Section" },
+            { src: "/assets/images/real-state/getSold.png", alt: "Property Listings" },
+            { src: "/assets/images/real-state/services.png", alt: "Services Section" }
+        ],
         tech: ["React", "Tailwind CSS"],
+        features: [
+            "Fully responsive design that adapts seamlessly from mobile to desktop",
+            "Component-based architecture for easy maintenance and scalability",
+            "Modern UI with smooth animations and micro-interactions",
+            "Optimized images and lazy loading for fast page performance",
+            "Clean, accessible markup following WCAG guidelines"
+        ],
+        challenges: "Achieving pixel-perfect responsiveness across all breakpoints required careful planning of the Tailwind utility classes. Created custom component variants to maintain design consistency while ensuring flexibility for different screen sizes.",
         github: "https://github.com/IanChristopherTandog/Marci-Metzger-Real-Estate",
         demo: "https://marci-metzger-real-estate.pages.dev/"
     },
@@ -247,9 +281,28 @@ const projects = [
         title: "Warehouse Management System",
         type: "Academic",
         description: "Desktop application built with C# WinForms for managing warehouse operations. Features intuitive interface for products, inventory, customers, and orders with SQL Server integration.",
+        detailedDescription: `
+            <p>A robust desktop application designed to handle the complex requirements of warehouse inventory and order management. The system provides real-time tracking of stock levels and automated alerts for low inventory.</p>
+            <p>Developed using C# WinForms and ADO.NET, this project demonstrates understanding of desktop application architecture, database design, and business logic implementation for enterprise-level operations.</p>
+        `,
         image: "/assets/images/warehouse.png", 
         imageAlt: "Warehouse Management System Interface",
+        gallery: [
+            { src: "/assets/images/warehouse/homepage.png", alt: "Main Dashboard" },
+            { src: "/assets/images/warehouse/inventory.png", alt: "Inventory Management" },
+            { src: "/assets/images/warehouse/orders.png", alt: "Order Processing" },
+            { src: "/assets/images/warehouse/login.png", alt: "Login Screen"}
+        ],
         tech: ["C#", "WinForms", "SQL Server", "ADO.NET"],
+        features: [
+            "Complete CRUD operations for products, inventory, customers, and orders",
+            "Real-time inventory tracking with automatic stock level calculations",
+            "Advanced search and filtering capabilities across all data tables",
+            "Order processing workflow with status tracking and history",
+            "Data validation and error handling to maintain database integrity",
+            "Report generation for inventory status and order analytics"
+        ],
+        challenges: "Managing complex relationships between products, orders, and inventory required careful database schema design. Implemented transaction handling to ensure data consistency during order processing and inventory updates. Also created custom data binding mechanisms for efficient UI updates.",
         github: "https://github.com/IanChristopherTandog/warehouse-management-system",
         demo: null
     },
@@ -257,21 +310,44 @@ const projects = [
         title: "Tank Battle",
         type: "Personal",
         description: "2D action game featuring player-controlled tanks with unlockable skills, power-ups, AI-driven enemies, and boss battles. Showcases smooth combat mechanics and resource management.",
+        detailedDescription: `
+            <p>An engaging 2D action game that combines strategic gameplay with fast-paced combat. Players control tanks through increasingly difficult levels, managing resources and unlocking abilities to overcome challenging AI opponents.</p>
+            <p>Built with Godot Engine, this project showcases game development fundamentals including physics simulation, AI behavior trees, particle effects, and responsive controls that create a polished gaming experience.</p>
+        `,
         image: "/assets/images/tank.png", 
         imageAlt: "Tank Battle Game Gameplay",
+        gallery: [
+            { src: "/assets/images/tank/gameplay.png", alt: "Gameplay Action" },
+            { src: "/assets/images/tank/gameover.png", alt: "Game Over" },
+            { src: "/assets/images/tank/title.png", alt: "Title Screen" }
+        ],
         tech: ["Godot 3", "GDScript"],
+        features: [
+            "Skill progression system with multiple unlockable abilities and upgrades",
+            "Diverse enemy AI with different behavior patterns and attack strategies",
+            "Epic boss battles with unique mechanics and multiple phases",
+            "Power-up system for temporary boosts and strategic advantages",
+            "Smooth 60 FPS gameplay with responsive tank controls and physics",
+            "Dynamic particle effects for weapons, explosions, and environmental elements"
+        ],
+        challenges: "Balancing gameplay difficulty while maintaining engagement was crucial. Implemented a dynamic difficulty system that adjusts enemy spawn rates and AI aggressiveness based on player performance. Optimized the game loop and collision detection to maintain consistent frame rates even with multiple entities on screen.",
         github: "https://github.com/IanChristopherTandog/Tank-Battle",
         demo: "https://ianchristophertandog.github.io/Tank-Battle/"
     }
 ];
 
+// Gallery management
+let currentImageIndex = 0;
+let currentProjectGallery = [];
+
 // Function to generate project cards
 function renderProjects() {
     const container = document.getElementById('projects-container');
     
-    projects.forEach(project => {
+    projects.forEach((project, index) => {
         const card = document.createElement('article');
         card.className = 'project-card';
+        card.onclick = () => openModal(index);
         
         card.innerHTML = `
             <div class="project-image">
@@ -292,11 +368,11 @@ function renderProjects() {
                 </div>
 
                 <div class="project-links">
-                    <a href="${project.github}" class="project-link" target="_blank" rel="noopener noreferrer">
+                    <a href="${project.github}" class="project-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
                         GitHub →
                     </a>
                     ${project.demo ? `
-                        <a href="${project.demo}" class="project-link" target="_blank" rel="noopener noreferrer">
+                        <a href="${project.demo}" class="project-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
                             Live Demo →
                         </a>
                     ` : ''}
@@ -308,5 +384,123 @@ function renderProjects() {
     });
 }
 
-// Run when DOM is loaded
-document.addEventListener('DOMContentLoaded', renderProjects);
+// Modal functions
+function openModal(projectIndex) {
+    const project = projects[projectIndex];
+    const modal = document.getElementById('projectModal');
+    
+    // Populate modal content
+    document.getElementById('modalTitle').textContent = project.title;
+    document.getElementById('modalType').textContent = project.type;
+    document.getElementById('modalDescription').innerHTML = project.detailedDescription;
+    
+    // Tech tags
+    const techContainer = document.getElementById('modalTech');
+    techContainer.innerHTML = project.tech.map(tech => 
+        `<span class="tech-tag">${tech}</span>`
+    ).join('');
+    
+    // Features
+    const featuresContainer = document.getElementById('modalFeatures');
+    featuresContainer.innerHTML = project.features.map(feature => 
+        `<li>${feature}</li>`
+    ).join('');
+    
+    // Challenges (optional)
+    const challengesSection = document.getElementById('modalChallengesSection');
+    if (project.challenges) {
+        challengesSection.style.display = 'block';
+        document.getElementById('modalChallenges').innerHTML = `<p>${project.challenges}</p>`;
+    } else {
+        challengesSection.style.display = 'none';
+    }
+    
+    // Gallery
+    currentProjectGallery = project.gallery || [{ src: project.image, alt: project.imageAlt }];
+    currentImageIndex = 0;
+    renderGallery();
+    
+    // Action buttons
+    document.getElementById('modalGithub').href = project.github;
+    
+    const demoBtn = document.getElementById('modalDemo');
+    if (project.demo) {
+        demoBtn.href = project.demo;
+        demoBtn.style.display = 'flex';
+    } else {
+        demoBtn.style.display = 'none';
+    }
+    
+    // Show modal
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+    const modal = document.getElementById('projectModal');
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+function renderGallery() {
+    // Main image
+    const mainImage = document.getElementById('galleryMainImage');
+    mainImage.src = currentProjectGallery[currentImageIndex].src;
+    mainImage.alt = currentProjectGallery[currentImageIndex].alt;
+    
+    // Counter
+    document.getElementById('galleryCurrentIndex').textContent = currentImageIndex + 1;
+    document.getElementById('galleryTotalImages').textContent = currentProjectGallery.length;
+    
+    // Thumbnails
+    const thumbnailsContainer = document.getElementById('galleryThumbnails');
+    thumbnailsContainer.innerHTML = currentProjectGallery.map((img, index) => `
+        <div class="gallery-thumbnail ${index === currentImageIndex ? 'active' : ''}" onclick="changeImage(${index})">
+            <img src="${img.src}" alt="${img.alt}">
+        </div>
+    `).join('');
+}
+
+function changeImage(index) {
+    currentImageIndex = index;
+    renderGallery();
+}
+
+function nextImage() {
+    currentImageIndex = (currentImageIndex + 1) % currentProjectGallery.length;
+    renderGallery();
+}
+
+function prevImage() {
+    currentImageIndex = (currentImageIndex - 1 + currentProjectGallery.length) % currentProjectGallery.length;
+    renderGallery();
+}
+
+// Event listeners
+document.addEventListener('DOMContentLoaded', () => {
+    renderProjects();
+    
+    // Modal close button
+    document.querySelector('.modal-close').addEventListener('click', closeModal);
+    
+    // Close on overlay click
+    document.querySelector('.modal-overlay').addEventListener('click', closeModal);
+    
+    // Gallery navigation
+    document.querySelector('.gallery-prev').addEventListener('click', prevImage);
+    document.querySelector('.gallery-next').addEventListener('click', nextImage);
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        const modal = document.getElementById('projectModal');
+        if (!modal.classList.contains('active')) return;
+        
+        if (e.key === 'Escape') {
+            closeModal();
+        } else if (e.key === 'ArrowLeft') {
+            prevImage();
+        } else if (e.key === 'ArrowRight') {
+            nextImage();
+        }
+    });
+});
