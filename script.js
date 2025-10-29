@@ -152,6 +152,7 @@ document.querySelectorAll('.skill-tag').forEach((el, index) => {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
+        
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
             const headerOffset = 80;
@@ -224,32 +225,36 @@ if (backToTop) {
 // Enhanced Projects data array with gallery and detailed information
 const projects = [
     {
-        title: "Salon Management System",
-        type: "Academic",
-        description: "Full-stack web application that modernizes salon operations with appointment scheduling, AI-powered customer inquiries, and comprehensive admin management.",
-        detailedDescription: `
-            <p>A comprehensive web-based solution designed to streamline salon operations and enhance customer experience. This system integrates multiple aspects of salon management into a single, cohesive platform.</p>
-            <p>Built as a capstone project, the system demonstrates full-stack development capabilities, from database design to user interface implementation, with a focus on real-world business requirements.</p>
-        `,
-        image: "/assets/images/salon.png",
-        imageAlt: "Salon Management System Dashboard",
-        gallery: [
-            { src: "/assets/images/salon/dashboard.png", alt: "Dashboard Overview" },
-            { src: "/assets/images/salon/appointment.png", alt: "Appointment Scheduling Interface" },
-            { src: "/assets/images/salon/dashboard.png", alt: "Admin Management Panel" }
-        ],
-        tech: ["PHP", "MySQL", "Bootstrap", "Chatbase API"],
-        features: [
-            "Real-time appointment scheduling with conflict detection and automated notifications",
-            "AI-powered chatbot integration for handling customer inquiries and FAQs 24/7",
-            "Comprehensive admin dashboard for managing services, staff, and customer records",
-            "Customer portal for viewing appointment history and managing bookings",
-            "Revenue tracking and analytics for business insights"
-        ],
-        challenges: "Integrating the Chatbase API while maintaining data privacy was a key challenge. Implemented proper data sanitization and created a custom middleware layer to handle API requests securely. Also optimized database queries for the scheduling system to handle concurrent bookings without conflicts.",
-        github: "https://github.com/IanChristopherTandog/Web-based-Appointment-System-with-Inquiry-for-Minell-s-Hair-Nail-and-Lashes-Salon",
-        demo: null
+    title: "Salon Management System",
+    type: "Capstone / Academic",
+    description: "A web-based appointment and inquiry system designed to streamline salon operations, reduce scheduling conflicts, and improve client engagement through digital transformation.",
+    detailedDescription: `
+        <p>This capstone project was developed for Minell’s Hair, Nail, and Lashes Salon, a growing beauty and wellness business located in Dasmariñas City, Cavite. The system addresses the salon’s manual scheduling and record-keeping process, which previously relied on notebooks and Facebook Messenger for appointments, leading to frequent booking errors and missed reminders.</p>
+        <p>The system introduces an online platform that enables clients to conveniently book, reschedule, or cancel appointments. It provides real-time availability tracking, automated email notifications, and a built-in inquiry feature where clients can ask about services, promotions, and availability. On the administrative side, the salon staff can efficiently manage appointments, client records, inquiries, and reports through an integrated dashboard.</p>
+        <p>By transitioning from manual documentation to a structured digital system, the project enhances data management accuracy, improves client satisfaction, and promotes operational efficiency. This transformation allows staff to focus more on providing quality services rather than handling paperwork.</p>
+    `,
+    image: "/assets/images/salon.png",
+    imageAlt: "Salon Management System Interface",
+    gallery: [
+        { src: "/assets/images/salon/dashboard.png", alt: "Admin Dashboard Overview" },
+        { src: "/assets/images/salon/appointment.png", alt: "Client Booking Interface" },
+        { src: "/assets/images/salon/home.png", alt: "Landing Page Interface" }
+    ],
+    tech: ["PHP", "MySQL", "Bootstrap", "JavaScript", "HTML", "CSS"],
+    features: [
+        "Online appointment scheduling with real-time slot availability",
+        "Inquiry feature for client questions and service details",
+        "Admin dashboard for managing clients, staff, and reports",
+        "Automated email notifications and reminders",
+        "Content management for services, pricing, and promotions",
+        "Profile management with secure login and password recovery",
+        "Virtual hairstyle preview for enhanced customer experience"
+    ],
+    challenges: "One of the main challenges was ensuring data accuracy and preventing scheduling conflicts when multiple users accessed the system simultaneously. The team also focused on building a reliable inquiry feature that provided fast, organized communication between clients and staff, while maintaining user-friendly design and secure data handling.",
+    github: "https://github.com/IanChristopherTandog/Web-based-Appointment-System-with-Inquiry-for-Minell-s-Hair-Nail-and-Lashes-Salon",
+    demo: null
     },
+
     {
         title: "Marci Metzger Real Estate",
         type: "Personal",
@@ -366,7 +371,7 @@ function renderProjects() {
                 <div class="project-tech">
                     ${project.tech.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
                 </div>
-
+           
                 <div class="project-links">
                     <a href="${project.github}" class="project-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
                         GitHub →
