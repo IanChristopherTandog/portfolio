@@ -390,6 +390,9 @@ function renderProjects() {
 }
 
 // Modal functions
+
+let autoSlideInterval;
+
 function openModal(projectIndex) {
     const project = projects[projectIndex];
     const modal = document.getElementById('projectModal');
@@ -436,6 +439,8 @@ function openModal(projectIndex) {
         demoBtn.style.display = 'none';
     }
     
+    clearInterval(autoSlideInterval);
+    autoSlideInterval = setInterval(nextImage, 5000); // Auto-slide every 5 seconds
     // Show modal
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
