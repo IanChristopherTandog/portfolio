@@ -502,7 +502,7 @@ nav.scrolled {
 
 .stat-card h3 {
     font-size: 1.2rem;
-    color: var(--accent-secondary   );
+    color: var(--accent-primary);
     margin-bottom: 2px;
 }
 
