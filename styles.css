@@ -1200,6 +1200,10 @@ nav.scrolled {
     border-radius: var(--border-radius);
     padding: 24px;
 }
+.timeline-content:hover {
+    border-color: rgba(130, 87, 229, 0.3);
+    box-shadow: 0 8px 48px rgba(130, 87, 229, 0.2);
+}
 
 .timeline-date {
     color: var(--accent-primary);
