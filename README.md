@@ -24,3 +24,5 @@ A modern, responsive portfolio website showcasing my projects and skills as a we
 
 ## 🖼️ Screenshots
 ![Home Screen](assets/screenshots/home.png)
+![Skills](assets/screenshots/skills.png)
+![Project Cards](assets/screenshots/projectCards.png)
