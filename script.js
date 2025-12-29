@@ -345,6 +345,72 @@ const projects = [
 let currentImageIndex = 0;
 let currentProjectGallery = [];
 
+// Currently Building data
+const currentWork = [
+  {
+    title: "JRJT Repair Shop Website & Management System",
+    status: "In progress",
+    description: "Modernizing a local repair shop with a new website and management system.",
+    tech: ["React (Vite)", "TypeScript", "Tailwind CSS"],
+    focus: "Focus: UI components, design system, responsive layout",
+    github: null,
+    demo: "https://jrjt-frontend.vercel.app/",
+    image: "/assets/images/current/jrjt.png",
+    imageAlt: "JRJT Repair Shop project preview"
+  },
+  {
+    title: "Zero2Projects",
+    status: "Active",
+    description: "A guided, project-based learning platform for aspiring developers.",
+    tech: ["React", "Tailwind CSS", "Spring Boot", "Java", "MySQL"],
+    focus: "Focus: backend APIs, SEO, UI polish",
+    github: "https://github.com/IanChristopherTandog/Zero2Projects",
+    demo: "https://zero2projects.vercel.app/",
+    image: "/assets/images/current/zero2projects.png",
+    imageAlt: "Zero2Projects project preview"
+  }
+];
+
+// Render current work cards
+function renderCurrentWork() {
+  const container = document.getElementById('current-container');
+  if (!container) return;
+
+  currentWork.forEach(item => {
+    const card = document.createElement('article');
+    card.className = 'current-card';
+
+    card.innerHTML = `
+    ${item.image ? `
+        <div class="current-image">
+        <img src="${item.image}" alt="${item.imageAlt || item.title}" loading="lazy">
+        </div>
+        ` : ''}
+
+        <div class="current-title-row">
+            <h3 class="current-title">${item.title}</h3>
+            <span class="current-status">${item.status}</span>
+        </div>
+
+        <p class="current-description">${item.description}</p>
+
+        <div class="current-meta">
+            ${item.tech.map(t => `<span class="tech-tag">${t}</span>`).join('')}
+        </div>
+
+        ${item.focus ? `<div class="current-focus">${item.focus}</div>` : ''}
+
+        <div class="current-links">
+            ${item.github ? `<a class="current-link" href="${item.github}" target="_blank" rel="noopener noreferrer">GitHub →</a>` : ''}
+            ${item.demo ? `<a class="current-link" href="${item.demo}" target="_blank" rel="noopener noreferrer">Live Demo →</a>` : ''}
+        </div>
+    `;
+
+    container.appendChild(card);
+  });
+}
+
+
 // Function to generate project cards
 function renderProjects() {
     const container = document.getElementById('projects-container');
@@ -488,6 +554,7 @@ function prevImage() {
 
 // Event listeners
 document.addEventListener('DOMContentLoaded', () => {
+    renderCurrentWork();
     renderProjects();
     
     // Modal close button
