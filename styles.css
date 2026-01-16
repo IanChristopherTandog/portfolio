@@ -1379,6 +1379,7 @@ nav.scrolled {
     padding: 48px;
     box-shadow: var(--shadow);
     transition: var(--transition);
+    
 }
 
 .contact-form:hover {
@@ -1389,6 +1390,7 @@ nav.scrolled {
 .form-group {
     margin-bottom: 24px;
     text-align: left;
+
 }
 
 .form-label {
