@@ -289,7 +289,19 @@ const certifications = [
     description: "Cloud basics: development concepts and fundamental cloud principles.",
     tags: ["Cloud", "Basics"],
     thumb: "assets/images/certs/huawei-cloud.png",
-    pdf: "", // add PDF path here if you have one
+    pdf: "", 
+  },
+  {
+    featured: false,
+    title: "Development and Basic Concepts of Cloud Computing",
+    date: "Aug 2025 • Completed",
+    pill: "Certificate",
+    issuer: "Huawei ICT Academy",
+    issuerLogo: "assets/icons/issuers/huawei.png",
+    description: "Cloud Computing: Development and Basic Concepts of Cloud Computing",
+    tags: ["Cloud", "Basics", "Development"],
+    thumb: "assets/images/certs/Development-and-Basic-Concepts-of-Cloud-Computing.png",
+    pdf: "", 
   },
 ];
 
