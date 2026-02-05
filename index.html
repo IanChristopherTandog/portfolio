@@ -215,6 +215,51 @@
         </div>
     </section>
 
+    <!-- Certificate Section -->
+    <section class="certifications section" id="certifications">
+    <div class="container">
+    <div class="section-header">
+        <div class="section-badge">Certifications</div>
+        <h2 class="section-title">Certifications & Technical Training</h2>
+        <p class="section-description">
+        Proof of structured training in Java backend development, Spring, and modern web practices.
+        </p>
+    </div>
+
+    <!-- Injected by JS -->
+    <div id="cert-featured" class="cert-grid"></div>
+
+    <div class="cert-more">
+        <button id="certMoreBtn" class="cert-more-btn" type="button" aria-expanded="false">
+        View more certificates
+        <span id="certMoreIcon" class="cert-more-icon">+</span>
+        </button>
+
+        <!-- Collapsible -->
+        <div id="certMoreWrap" class="cert-more-wrap" aria-hidden="true">
+        <div id="cert-more" class="cert-grid cert-grid-more"></div>
+        </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- Certificate Modal -->
+    <div class="cert-modal" id="certModal" aria-hidden="true">
+    <div class="cert-modal-overlay" data-close="true"></div>
+    <div class="cert-modal-content" role="dialog" aria-modal="true" aria-label="Certificate preview">
+    <button class="cert-modal-close" type="button" aria-label="Close certificate preview" data-close="true">✕</button>
+
+    <div class="cert-modal-header">
+        <h3 class="cert-modal-title" id="certModalTitle">Certificate</h3>
+        <a class="cert-modal-link" id="certModalPdf" href="#" target="_blank" rel="noopener noreferrer">Open PDF →</a>
+    </div>
+
+    <div class="cert-modal-body">
+        <img class="cert-modal-image" id="certModalImage" src="" alt="Certificate preview">
+    </div>
+    </div>
+    </div>
+
     <!-- Projects Section -->
     <section class="projects section" id="projects">
         <div class="container">
