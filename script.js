@@ -215,7 +215,7 @@ const backToTopBtn = document.getElementById("backToTop");
 
 window.addEventListener("scroll", () => {
   if (!backToTopBtn) return;
-  if (window.pageYOffset > 300) backToTopBtn.classList.add("show");
+  if (window.pageYOffset > 1000) backToTopBtn.classList.add("show");
   else backToTopBtn.classList.remove("show");
 });
 
@@ -235,11 +235,11 @@ const certifications = [
     date: "Sep 2025 – Jan 2026 • Completed",
     pill: "Training",
     issuer: "Accenture",
-    issuerLogo: "assets/icons/issuers/accenture.png",
+    issuerLogo: "assets/icons/issuers/accenture.WebP",
     description:
       "Intensive program focused on <strong>Java backend development</strong>, <strong>REST API design</strong>, and modern <strong>React practices</strong>.",
     tags: ["Java", "REST API", "Architecture", "React"],
-    thumb: "assets/images/certs/accenture.png",
+    thumb: "assets/images/certs/accenture.WebP",
     pdf: "assets/certs/accenture.pdf",
   },
   {
@@ -248,11 +248,11 @@ const certifications = [
     date: "Jul – Aug 2025 • Completed",
     pill: "Certificate",
     issuer: "Ground Gurus",
-    issuerLogo: "assets/icons/issuers/ground-gurus.png",
+    issuerLogo: "assets/icons/issuers/ground-gurus.WebP",
     description:
       "Completed interactive training on <strong>Spring Framework</strong> and building <strong>web apps & REST APIs</strong> using Java.",
     tags: ["Java", "Spring", "REST API"],
-    thumb: "assets/images/certs/ground-gurus.png",
+    thumb: "assets/images/certs/ground-gurus.WebP",
     pdf: "assets/certs/ground-gurus.pdf",
   },
   {
@@ -261,10 +261,10 @@ const certifications = [
     date: "Jun 2022 • Completed",
     pill: "Certificate",
     issuer: "Oracle Academy",
-    issuerLogo: "assets/icons/issuers/oracle.png",
+    issuerLogo: "assets/icons/issuers/oracle.WebP",
     description: "Core Java foundations covering <strong>OOP</strong> and programming basics.",
     tags: ["Java", "OOP"],
-    thumb: "assets/images/certs/oracle-java.png",
+    thumb: "assets/images/certs/oracle-java.WebP",
     pdf: "assets/certs/oracle-java-fundamentals.pdf",
   },
   {
@@ -273,10 +273,10 @@ const certifications = [
     date: "Jun 2022 • Completed",
     pill: "Certificate",
     issuer: "Oracle Academy",
-    issuerLogo: "assets/icons/issuers/oracle.png",
+    issuerLogo: "assets/icons/issuers/oracle.WebP",
     description: "System administration fundamentals and basic infrastructure concepts.",
     tags: ["IT", "Admin"],
-    thumb: "assets/images/certs/sysadmin.png",
+    thumb: "assets/images/certs/sysadmin.WebP",
     pdf: "assets/certs/system-administration.pdf",
   },
   {
@@ -285,10 +285,10 @@ const certifications = [
     date: "Aug 2025 • Completed",
     pill: "Certificate",
     issuer: "Huawei ICT Academy",
-    issuerLogo: "assets/icons/issuers/huawei.png",
+    issuerLogo: "assets/icons/issuers/huawei.WebP",
     description: "Cloud basics: development concepts and fundamental cloud principles.",
     tags: ["Cloud", "Basics"],
-    thumb: "assets/images/certs/huawei-cloud.png",
+    thumb: "assets/images/certs/huawei-cloud.WebP",
     pdf: "", 
   },
   {
@@ -297,10 +297,10 @@ const certifications = [
     date: "Aug 2025 • Completed",
     pill: "Certificate",
     issuer: "Huawei ICT Academy",
-    issuerLogo: "assets/icons/issuers/huawei.png",
+    issuerLogo: "assets/icons/issuers/huawei.WebP",
     description: "Cloud Computing: Development and Basic Concepts of Cloud Computing",
     tags: ["Cloud", "Basics", "Development"],
-    thumb: "assets/images/certs/Development-and-Basic-Concepts-of-Cloud-Computing.png",
+    thumb: "assets/images/certs/Development-and-Basic-Concepts-of-Cloud-Computing.WebP",
     pdf: "", 
   },
 ];
@@ -490,12 +490,12 @@ const projects = [
         <p>The system introduces an online platform that enables clients to conveniently book, reschedule, or cancel appointments. It provides real-time availability tracking, automated email notifications, and a built-in inquiry feature where clients can ask about services, promotions, and availability. On the administrative side, the salon staff can efficiently manage appointments, client records, inquiries, and reports through an integrated dashboard.</p>
         <p>By transitioning from manual documentation to a structured digital system, the project enhances data management accuracy, improves client satisfaction, and promotes operational efficiency. This transformation allows staff to focus more on providing quality services rather than handling paperwork.</p>
     `,
-    image: "/assets/images/salon.png",
+    image: "/assets/images/salon.WebP",
     imageAlt: "Salon Management System Interface",
     gallery: [
-      { src: "/assets/images/salon/dashboard.png", alt: "Admin Dashboard Overview" },
-      { src: "/assets/images/salon/appointment.png", alt: "Client Booking Interface" },
-      { src: "/assets/images/salon/home.png", alt: "Landing Page Interface" },
+      { src: "/assets/images/salon/dashboard.WebP", alt: "Admin Dashboard Overview" },
+      { src: "/assets/images/salon/appointment.WebP", alt: "Client Booking Interface" },
+      { src: "/assets/images/salon/home.WebP", alt: "Landing Page Interface" },
     ],
     tech: ["PHP", "MySQL", "Bootstrap", "JavaScript", "HTML", "CSS"],
     features: [
@@ -523,12 +523,12 @@ const projects = [
             <p>A modern, visually striking landing page for a real estate professional that showcases property listings and services. This project emphasizes responsive design principles and contemporary UI/UX patterns.</p>
             <p>Initially developed as an academic assignment, the project was completely redesigned and rebuilt using modern React patterns and Tailwind CSS to create a portfolio-worthy demonstration of front-end development skills.</p>
         `,
-    image: "/assets/images/real-estate.png",
+    image: "/assets/images/real-estate.WebP",
     imageAlt: "Marci Metzger Real Estate Landing Page",
     gallery: [
-      { src: "/assets/images/real-state/home.png", alt: "Hero Section" },
-      { src: "/assets/images/real-state/getSold.png", alt: "Property Listings" },
-      { src: "/assets/images/real-state/services.png", alt: "Services Section" },
+      { src: "/assets/images/real-state/home.WebP", alt: "Hero Section" },
+      { src: "/assets/images/real-state/getSold.WebP", alt: "Property Listings" },
+      { src: "/assets/images/real-state/services.WebP", alt: "Services Section" },
     ],
     tech: ["React", "Tailwind CSS"],
     features: [
@@ -553,13 +553,13 @@ const projects = [
             <p>A robust desktop application designed to handle the complex requirements of warehouse inventory and order management. The system provides real-time tracking of stock levels and automated alerts for low inventory.</p>
             <p>Developed using C# WinForms and ADO.NET, this project demonstrates understanding of desktop application architecture, database design, and business logic implementation for enterprise-level operations.</p>
         `,
-    image: "/assets/images/warehouse.png",
+    image: "/assets/images/warehouse.WebP",
     imageAlt: "Warehouse Management System Interface",
     gallery: [
-      { src: "/assets/images/warehouse/homepage.png", alt: "Main Dashboard" },
-      { src: "/assets/images/warehouse/inventory.png", alt: "Inventory Management" },
-      { src: "/assets/images/warehouse/orders.png", alt: "Order Processing" },
-      { src: "/assets/images/warehouse/login.png", alt: "Login Screen" },
+      { src: "/assets/images/warehouse/homepage.WebP", alt: "Main Dashboard" },
+      { src: "/assets/images/warehouse/inventory.WebP", alt: "Inventory Management" },
+      { src: "/assets/images/warehouse/orders.WebP", alt: "Order Processing" },
+      { src: "/assets/images/warehouse/login.WebP", alt: "Login Screen" },
     ],
     tech: ["C#", "WinForms", "SQL Server", "ADO.NET"],
     features: [
@@ -585,12 +585,12 @@ const projects = [
             <p>An engaging 2D action game that combines strategic gameplay with fast-paced combat. Players control tanks through increasingly difficult levels, managing resources and unlocking abilities to overcome challenging AI opponents.</p>
             <p>Built with Godot Engine, this project showcases game development fundamentals including physics simulation, AI behavior trees, particle effects, and responsive controls that create a polished gaming experience.</p>
         `,
-    image: "/assets/images/tank.png",
+    image: "/assets/images/tank.WebP",
     imageAlt: "Tank Battle Game Gameplay",
     gallery: [
-      { src: "/assets/images/tank/gameplay.png", alt: "Gameplay Action" },
-      { src: "/assets/images/tank/gameover.png", alt: "Game Over" },
-      { src: "/assets/images/tank/title.png", alt: "Title Screen" },
+      { src: "/assets/images/tank/gameplay.WebP", alt: "Gameplay Action" },
+      { src: "/assets/images/tank/gameover.WebP", alt: "Game Over" },
+      { src: "/assets/images/tank/title.WebP", alt: "Title Screen" },
     ],
     tech: ["Godot 3", "GDScript"],
     features: [
@@ -623,7 +623,7 @@ const currentWork = [
     focus: "Focus: UI components, design system, responsive layout",
     github: null,
     demo: "https://jrjt-frontend.vercel.app/",
-    image: "/assets/images/current/jrjt.png",
+    image: "/assets/images/current/jrjt.WebP",
     imageAlt: "JRJT Repair Shop project preview",
   },
   {
@@ -634,7 +634,7 @@ const currentWork = [
     focus: "Focus: backend APIs, SEO, UI polish",
     github: "https://github.com/IanChristopherTandog/Zero2Projects",
     demo: "https://zero2projects.vercel.app/",
-    image: "/assets/images/current/zero2projects.png",
+    image: "/assets/images/current/zero2projects.WebP",
     imageAlt: "Zero2Projects project preview",
   },
 ];
