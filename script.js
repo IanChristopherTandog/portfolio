@@ -627,15 +627,15 @@ const currentWork = [
     imageAlt: "JRJT Repair Shop project preview",
   },
   {
-    title: "Zero2Projects",
-    status: "Active",
-    description: "A guided, project-based learning platform for aspiring developers.",
+    title: "Minnell’s Salon Management System - Remake",
+    status: "In Progress",
+    description: "A complete remake of a salon management system with improved UI, backend APIs, and SEO.",
     tech: ["React", "Tailwind CSS", "Spring Boot", "Java", "MySQL"],
     focus: "Focus: backend APIs, SEO, UI polish",
-    github: "https://github.com/IanChristopherTandog/Zero2Projects",
-    demo: "https://zero2projects.vercel.app/",
-    image: "/assets/images/current/zero2projects.WebP",
-    imageAlt: "Zero2Projects project preview",
+    github: "https://github.com/IanChristopherTandog/minellsalon-frontend",
+    demo: "https://minellsalon-frontend.vercel.app/",
+    image: "/assets/images/current/minellsalon.WebP",
+    imageAlt: "Minnell’s Salon Management System project preview",
   },
 ];
 
