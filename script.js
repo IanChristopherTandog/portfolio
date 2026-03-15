@@ -514,6 +514,39 @@ const projects = [
     demo: null,
   },
 
+    {
+    title: "CallReady",
+    type: "Side Project",
+    description:
+      "CallReady is a practice platform for aspiring BPO and call center applicants. It combines guided exercises, voice-based practice, and admin-managed content in a single React + Supabase app.",
+    detailedDescription: `
+            <p>CallReady is a comprehensive practice platform designed to help aspiring BPO and call center professionals develop their skills. The app provides structured exercises, voice-based training scenarios, and admin-managed content to simulate real-world call center environments.</p>
+            <p>Developed using React and Supabase, this project demonstrates understanding of modern web development practices, including state management, API integration, and responsive design for creating engaging user experiences.</p>
+        `,
+    image: "/assets/images/callReady.png",
+    imageAlt: "CallReady Website Interface",
+    gallery: [
+      { src: "/assets/images/callReady/homepage.png", alt: "Landing Page" },
+      { src: "/assets/images/callReady/login.png", alt: "Login Screen" },
+      { src: "/assets/images/callReady/modules.png", alt: "Modules" },
+      { src: "/assets/images/callReady/typingTest.png", alt: "Typing Test" },
+      { src: "/assets/images/callReady/voice.png", alt: "Voice Practice" },
+    ],
+    tech: ["React", "Tailwind CSS", "JavaScript", "Supabase", "Web Speech API"],
+    features: [
+      "Guided practice modules covering common call center scenarios and skills",
+      "Voice-based practice exercises using the Web Speech API for real-time feedback",
+      "Admin dashboard for managing content, tracking user progress, and analyzing performance metrics",
+      "Responsive design for seamless use on both desktop and mobile devices",
+      "User authentication and profile management with Supabase",
+      "Interactive quizzes and typing tests to enhance learning and engagement",
+    ],
+    challenges:
+      "Integrating voice-based practice using the Web Speech API presented challenges in ensuring accurate recognition and providing meaningful feedback to users. Additionally, designing an admin dashboard that allowed for easy content management while maintaining a user-friendly interface required careful consideration of UX principles.",
+    github: null,
+    demo: "https://callready-pro.vercel.app/",
+  },
+
   {
     title: "Marci Metzger Real Estate",
     type: "Personal",
@@ -542,38 +575,6 @@ const projects = [
       "Achieving pixel-perfect responsiveness across all breakpoints required careful planning of the Tailwind utility classes. Created custom component variants to maintain design consistency while ensuring flexibility for different screen sizes.",
     github: "https://github.com/IanChristopherTandog/Marci-Metzger-Real-Estate",
     demo: "https://marci-metzger-real-estate.pages.dev/",
-  },
-
-  {
-    title: "Warehouse Management System",
-    type: "Academic",
-    description:
-      "Desktop application built with C# WinForms for managing warehouse operations. Features intuitive interface for products, inventory, customers, and orders with SQL Server integration.",
-    detailedDescription: `
-            <p>A robust desktop application designed to handle the complex requirements of warehouse inventory and order management. The system provides real-time tracking of stock levels and automated alerts for low inventory.</p>
-            <p>Developed using C# WinForms and ADO.NET, this project demonstrates understanding of desktop application architecture, database design, and business logic implementation for enterprise-level operations.</p>
-        `,
-    image: "/assets/images/warehouse.WebP",
-    imageAlt: "Warehouse Management System Interface",
-    gallery: [
-      { src: "/assets/images/warehouse/homepage.WebP", alt: "Main Dashboard" },
-      { src: "/assets/images/warehouse/inventory.WebP", alt: "Inventory Management" },
-      { src: "/assets/images/warehouse/orders.WebP", alt: "Order Processing" },
-      { src: "/assets/images/warehouse/login.WebP", alt: "Login Screen" },
-    ],
-    tech: ["C#", "WinForms", "SQL Server", "ADO.NET"],
-    features: [
-      "Complete CRUD operations for products, inventory, customers, and orders",
-      "Real-time inventory tracking with automatic stock level calculations",
-      "Advanced search and filtering capabilities across all data tables",
-      "Order processing workflow with status tracking and history",
-      "Data validation and error handling to maintain database integrity",
-      "Report generation for inventory status and order analytics",
-    ],
-    challenges:
-      "Managing complex relationships between products, orders, and inventory required careful database schema design. Implemented transaction handling to ensure data consistency during order processing and inventory updates. Also created custom data binding mechanisms for efficient UI updates.",
-    github: "https://github.com/IanChristopherTandog/warehouse-management-system",
-    demo: null,
   },
 
   {
@@ -709,7 +710,7 @@ function renderProjects() {
         </div>
 
         <div class="project-links">
-          <a href="${project.github}" class="project-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">GitHub →</a>
+          ${project.github ? `<a href="${project.github}" class="project-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">GitHub →</a>` : ""}
           ${project.demo ? `<a href="${project.demo}" class="project-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">Live Demo →</a>` : ""}
         </div>
       </div>
@@ -748,6 +749,14 @@ function openModal(projectIndex) {
   renderGallery();
 
   document.getElementById("modalGithub").href = project.github;
+
+  const githubBtn = document.getElementById("modalGithub");
+  if (project.github) {
+    githubBtn.href = project.github;
+    githubBtn.style.display = "flex";
+  } else {
+    githubBtn.style.display = "none";
+  }
 
   const demoBtn = document.getElementById("modalDemo");
   if (project.demo) {
